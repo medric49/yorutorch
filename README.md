@@ -17,7 +17,7 @@ from efficientnet_pytorch import EfficientNet
 from yorutorch import datasets, transforms, data_modules, models, trainings
 ```
 
-## Preparation of useful classes
+## Some useful definitions
 
 
 ```python
