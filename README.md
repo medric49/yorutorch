@@ -1,5 +1,6 @@
 # yorutorch
-A simple library to train and test pytorch models easily
+A simple library to train and test pytorch models easily.
+If you are familiar Pytorch and you like pytorch lightning, then this simple library is made for you.
 
 # Example of training code
 
