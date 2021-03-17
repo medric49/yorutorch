@@ -151,7 +151,3 @@ training.show_loss_curves()
 
 I am waiting for your contribution :)
 
-
-```python
-
-```
