@@ -1,2 +1,2 @@
 # yorutorch
-A simple library to train pytorch models easily
+A simple library to train and test pytorch models easily
