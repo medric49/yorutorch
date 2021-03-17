@@ -1,7 +1,11 @@
 # yorutorch
 A simple library to train and test pytorch models easily
 
-# Importation of libraries
+# Example of training code
+
+This is a basic code for training with yorutorch
+
+## Importation of libraries
 
 
 ```python
@@ -13,7 +17,7 @@ from efficientnet_pytorch import EfficientNet
 from yorutorch import datasets, transforms, data_modules, models, trainings
 ```
 
-# Preparation of useful classes
+## Preparation of useful classes
 
 
 ```python
@@ -25,7 +29,7 @@ class CharToClass:
         return classes.index(c)
 ```
 
-# STEP 1 : Definition of the training data
+## STEP 1 : Definition of the training data
 
 Get the training data
 
@@ -88,7 +92,7 @@ data_module = data_modules.DataModule(
         valid_num_workers=16)
 ```
 
-# STEP 2 : Definition of the model
+## STEP 2 : Definition of the model
 
 Create the model to train based on a neural network
 
@@ -110,7 +114,7 @@ model.init_training_parameters(
     )
 ```
 
-# STEP 3 : Definition of the trainer
+## STEP 3 : Definition of the trainer
 
 Create a trainer (from pytorch_lighting) which will train the model by using the data module
 
@@ -119,7 +123,7 @@ Create a trainer (from pytorch_lighting) which will train the model by using the
 trainer = pl.Trainer(gpus=-1, max_epochs=30)
 ```
 
-# STEP 4 : Gathering the data, model and trainer in a training instance
+## STEP 4 : Gathering the data, model and trainer in a training instance
 
 Create the training. A training gathers a game (the data module), a player (the model) and a trainer (the trainer)
 
@@ -134,7 +138,7 @@ training = trainings.Training(
     )
 ```
 
-# STEP 5 : Launch the training
+## STEP 5 : Launch the training
 
 
 ```python
@@ -142,7 +146,7 @@ training.run()
 training.show_loss_curves()
 ```
 
-# STEP 6 : Contribute !
+## STEP 6 : Contribute !
 
 I am waiting for your contribution :)
 
