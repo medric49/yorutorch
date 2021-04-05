@@ -11,7 +11,7 @@ if __name__ == '__main__':
     test_dataset = datasets.ImageCSVTestDataset(
         csv_path='data/test.csv',
         key_col_name='image',
-        key_to_path_fn=lambda key: f'data/images/{key}',
+        key_to_path_fn=lambda key: f'data/{key}',
         transform=torchvision.transforms.Compose([
             torchvision.transforms.ToTensor(),
             torchvision.transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225]),

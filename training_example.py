@@ -22,7 +22,7 @@ if __name__ == '__main__':
         csv_path='data/train.csv',
         key_col_name='image',
         targets_col_names=['char'],
-        key_to_path_fn=lambda key: f'data/images/{key}',
+        key_to_path_fn=lambda key: f'data/{key}',
         target_transform=torchvision.transforms.Compose([
             CharToClass(),
             transforms.ToLong(),
