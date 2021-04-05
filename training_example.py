@@ -3,7 +3,7 @@ from torch import nn, optim
 import torchvision
 import string
 from efficientnet_pytorch import EfficientNet
-from yorutorch import datasets, transforms, data_modules, models, trainings
+from . import datasets, transforms, data_modules, models, trainings
 
 classes = string.ascii_lowercase + string.digits
 

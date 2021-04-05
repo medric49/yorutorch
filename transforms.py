@@ -1,6 +1,6 @@
 import torch
 
-from yorutorch import devices
+from . import devices
 
 
 class ToDevice:

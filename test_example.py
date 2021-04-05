@@ -2,7 +2,7 @@ import torch
 import torchvision
 
 from training_example import classes
-from yorutorch import models, datasets, transforms, devices
+from . import models, datasets, transforms, devices
 
 if __name__ == '__main__':
     model = models.Model.load_from_checkpoint('checkpoints/efficientnet.ckpt').to(device=devices.cuda_otherwise_cpu)
