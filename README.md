@@ -15,7 +15,7 @@ from torch import nn, optim
 import torchvision
 import string
 from efficientnet_pytorch import EfficientNet
-from . import datasets, transforms, data_modules, models, trainings
+from yorutorch import datasets, transforms, data_modules, models, trainings
 ```
 
 ## Some useful definitions
